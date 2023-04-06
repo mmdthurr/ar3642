@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>/qr/</title>
+    <style>
+        h3 {
+            color: rgb(3, 37, 129);
+            word-wrap: break-word;
+            white-space: normal;
+            max-width: 20rem;
+        }
+
+        body {
+            max-width: 30rem;
+            margin: auto;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div id="content"></div>
+    <div id="qrcode"></div>
+
+    <script>
+        const urlParam = new URLSearchParams(window.location.search).get('str');
+        document.getElementById('content').innerHTML = `<h3>${urlParam}</h3>`
+        var qrcode = new QRCode("qrcode", urlParam);
+    </script>
+</body>
+
+</html>
