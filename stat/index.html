@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>/stat/</title>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script>
+        const urlParam = new URLSearchParams(window.location.search).get('uuid');
+        fetch("/stat/list.json").then(
+            res => res.json()
+        ).then(
+            (json_res) => {
+                li = ""
+
+                for (let d = 0; d < json_res.domains.length; d++) {
+
+                    url = json_res.domains[d]
+                    base_vmess = `{"add": "${url}", "ps": "", "scy": "auto", "type": "", "sni": "", "path": "/ws/","port": 443, "v": 2, "host": "", "tls": "tls", "id": "${urlParam}", "net": "ws"}`
+
+                    li = li + `<li><a href="https://${url}">${url}</a> --- <a href="https://ar3642.top/qr?str=vmess://${btoa(base_vmess)}">qr + vmess</a></li>`
+                }
+                document.getElementById("content").innerHTML = `<ul>${li}</ul>`
+
+            }
+        )
+    </script>
+</body>
+
+</html>
