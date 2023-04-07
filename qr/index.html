@@ -4,25 +4,31 @@
 <head>
     <title>/qr/</title>
     <style>
+        img{
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         h3 {
             color: rgb(3, 37, 129);
             word-wrap: break-word;
             white-space: normal;
-            max-width: 20rem;
+            max-width: 500px;
         }
 
         body {
-            max-width: 30rem;
+            max-width: 500px;
             margin: auto;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
-<body>
-    <div id="content"></div>
+<body> 
     <div id="qrcode"></div>
-
+    <div id="content"></div>
+    
     <script>
         const urlParam = new URLSearchParams(window.location.search).get('str');
         document.getElementById('content').innerHTML = `<h3>${urlParam}</h3>`
