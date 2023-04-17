@@ -1,31 +1,5 @@
 {
     "domains": [
-        "a.khandedar.xyz",
-        "b.khandedar.xyz",
-        "c.khandedar.xyz",
-        "d.khandedar.xyz",
-        "e.khandedar.xyz",
-        "f.khandedar.xyz",
-        "g.khandedar.xyz",
-        "h.khandedar.xyz",
-        "i.khandedar.xyz",
-        "j.khandedar.xyz",
-        "k.khandedar.xyz",
-        "l.khandedar.xyz",
-        "m.khandedar.xyz",
-        "n.khandedar.xyz",
-        "o.khandedar.xyz",
-        "p.khandedar.xyz",
-        "q.khandedar.xyz",
-        "r.khandedar.xyz",
-        "s.khandedar.xyz",
-        "t.khandedar.xyz",
-        "u.khandedar.xyz",
-        "v.khandedar.xyz",
-        "w.khandedar.xyz",
-        "x.khandedar.xyz",
-        "y.khandedar.xyz",
-        "z.khandedar.xyz",
         "a.khamenei.shop",
         "b.khamenei.shop",
         "c.khamenei.shop",
@@ -52,5 +26,5 @@
         "x.khamenei.shop",
         "y.khamenei.shop",
         "z.khamenei.shop"
-    ]   
+    ]
 }
