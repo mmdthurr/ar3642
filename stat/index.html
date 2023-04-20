@@ -9,10 +9,7 @@
   </head>
 
   <body>
-    <p>
-      bopbep.com ba khandedar.xyz kamel filter shod az khamenei.shop estefade
-      konid
-    </p>
+    <p>bopbep.com is on arvan cdn</p>
 
     <div id="content"></div>
     <script>
@@ -23,22 +20,15 @@
           li = "";
 
           for (let d = 0; d < json_res.domains.length; d++) {
+            url = json_res.domains[d];
+
             base_vmess = `{"add": "${url}", "ps": "${url}", "scy": "auto", "type": "", "sni": "", "path": "/ws/","port": 443, "v": 2, "host": "", "tls": "tls", "id": "${urlParam}", "net": "ws"}`;
 
-            url = json_res.domains[d];
-            if ("meliqv.bopbep.com") {
-              li =
-                li +
-                `<li><a href="#">${url}</a> --- <a href="https://ar3642.top/qr?str=vmess://${btoa(
-                  base_vmess
-                )}">arvan cdn vmess</a></li>`;
-            } else {
-              li =
-                li +
-                `<li><a href="https://${url}">${url}</a> --- <a href="https://ar3642.top/qr?str=vmess://${btoa(
-                  base_vmess
-                )}">vmess</a></li>`;
-            }
+            li =
+              li +
+              `<li><a href="https://${url}">${url}</a> --- <a href="https://ar3642.top/qr?str=vmess://${btoa(
+                base_vmess
+              )}">vmess</a></li>`;
           }
           document.getElementById("content").innerHTML = `<ul>${li}</ul>`;
         });
