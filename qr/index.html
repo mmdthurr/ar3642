@@ -3,15 +3,25 @@
 
 <head>
     <title>/qr/</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        img{
+        #qrcode img,
+        #qrcode canvas {
+            width: 250px;
+            height: 250px;
             display: block;
-            margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
         }
+
+        #content {
+            padding: 10px;
+            text-align: center;
+            font-family: monospace;
+        }
+
         h3 {
-            color: rgb(3, 37, 129);
             word-wrap: break-word;
             white-space: normal;
             max-width: 500px;
@@ -20,19 +30,26 @@
         body {
             max-width: 500px;
             margin: auto;
+            margin-top: 20px;
+            background-color: #78909C;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
-<body> 
+<body>
     <div id="qrcode"></div>
     <div id="content"></div>
-    
+
     <script>
-        const urlParam = new URLSearchParams(window.location.search).get('str');
-        document.getElementById('content').innerHTML = `<h3>${urlParam}</h3>`
-        var qrcode = new QRCode("qrcode", urlParam);
+        const urlStr = new URLSearchParams(window.location.search).get('str');
+        document.getElementById('content').innerHTML = `<h3>${urlStr}</h3>`
+        var qrcode = new QRCode("qrcode", {
+            text: urlStr,
+            colorDark: "#000000",
+            colorLight: "#78909C",
+            correctLevel: QRCode.CorrectLevel.H
+        });
     </script>
 </body>
 
