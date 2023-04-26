@@ -1,31 +1,120 @@
 {
     "domains": [
-        "meliqv.bopbep.com",
-        "a.khamenei.shop",
-        "b.khamenei.shop",
-        "c.khamenei.shop",
-        "d.khamenei.shop",
-        "e.khamenei.shop",
-        "f.khamenei.shop",
-        "g.khamenei.shop",
-        "h.khamenei.shop",
-        "i.khamenei.shop",
-        "j.khamenei.shop",
-        "k.khamenei.shop",
-        "l.khamenei.shop",
-        "m.khamenei.shop",
-        "n.khamenei.shop",
-        "o.khamenei.shop",
-        "p.khamenei.shop",
-        "q.khamenei.shop",
-        "r.khamenei.shop",
-        "s.khamenei.shop",
-        "t.khamenei.shop",
-        "u.khamenei.shop",
-        "v.khamenei.shop",
-        "w.khamenei.shop",
-        "x.khamenei.shop",
-        "y.khamenei.shop",
-        "z.khamenei.shop"
+        {
+            "d": "kind.kharabat.site",
+            "about": "arvan#mci#mtn#tci"
+        },
+        {
+            "d": "direct.bopbep.com",
+            "about": "arvan#mtn#tci"
+        },
+        {
+            "d": "meliqv.bopbep.com",
+            "about": "arvan#mtn#tci"
+        },
+        {
+            "d": "a.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "b.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "c.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "d.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "e.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "f.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "g.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "h.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "i.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "j.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "k.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "l.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "m.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "n.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "o.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "p.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "q.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "r.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "s.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "t.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "u.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "v.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "w.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "x.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "y.khamenei.shop",
+            "about": "cloudflare#tci"
+        },
+        {
+            "d": "z.khamenei.shop",
+            "about": "cloudflare#tci"
+        }
     ]
 }
