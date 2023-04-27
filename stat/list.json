@@ -1,18 +1,6 @@
 {
     "domains": [
         {
-            "d": "kind.kharabat.site",
-            "about": "arvan#mci#mtn#tci"
-        },
-        {
-            "d": "direct.bopbep.com",
-            "about": "arvan#mtn#tci"
-        },
-        {
-            "d": "meliqv.bopbep.com",
-            "about": "arvan#mtn#tci"
-        },
-        {
             "d": "a.khamenei.shop",
             "about": "cloudflare#tci"
         },
