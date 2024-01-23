@@ -1,0 +1,41 @@
+body {
+    background-image: url("/static/stars3.gif");
+    color: white;
+}
+
+div {
+    direction: rtl;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: large;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.box {
+    padding: 10px;
+    border-style: hidden double hidden hidden;
+    border-color: darkorchid;
+}
+
+a {
+    color: white;
+}
+
+code {
+    background-color: rgb(73, 73, 73);
+    display: block;
+    direction: ltr;
+    padding: 5px;
+}
+
+img {
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
