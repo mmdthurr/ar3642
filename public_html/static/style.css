@@ -1,4 +1,11 @@
+@font-face {
+    font-family: "MyWebFont";
+    src: url("/static/Far_MashinTahrir.ttf");
+    size-adjust: 140%;
+}
+
 body {
+    font-family: MyWebFont;
     background-image: url("/static/stars3.gif");
     color: white;
 }
@@ -10,6 +17,7 @@ div {
     margin-top: 40px;
     font-size: large;
 
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
 
 }

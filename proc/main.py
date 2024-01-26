@@ -21,8 +21,8 @@ base_index_html = """
         <a href="{%tg%}">tg</a>
     </header>
     <div class="fa">
-        <img src="/static/iran.jpg" alt="">
-        <p>{%bio%}</p>
+        <img src="/static/velvet.png" alt="">
+        <h3>{%bio%}</h3>
     </div>
     {%body%}
 </body>
