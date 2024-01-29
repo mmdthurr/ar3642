@@ -6,8 +6,17 @@
 
 body {
     font-family: MyWebFont;
-    background-image: url("/static/stars3.gif");
+    background-image: url("/static/bck-crackle.gif");
     color: white;
+}
+
+.en {
+    direction: ltr;
+}
+
+.smw {
+    max-width: 600px;
+    margin: auto;
 }
 
 div {
@@ -18,7 +27,7 @@ div {
     font-size: large;
 
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 
 }
 

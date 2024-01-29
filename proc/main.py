@@ -5,8 +5,33 @@ import markdown
 import pathlib
 import datetime
 
+# base_index_html = """
+# <!DOCTYPE html>
+# <head>
+#     <meta charset="UTF-8">
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#     <link rel="stylesheet" href="/static/style.css">
+#     <title>/mmd/</title>
+# </head>
+
+# <body>
+#     <header>
+#         <a href="emailto: {%email%}">email</a>
+#         <span> -- </span>
+#         <a href="{%tg%}">tg</a>
+#     </header>
+#     <div class="fa">
+#         <img src="/static/velvet.png" alt="">
+#         <h3>{%bio%}</h3>
+#     </div>
+    
+# </body>
+
+# </html>
+# """
 base_index_html = """
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +40,51 @@ base_index_html = """
 </head>
 
 <body>
-    <header>
+    <header class="smw">
         <a href="emailto: {%email%}">email</a>
-        <span> -- </span>
+        <span> - </span>
         <a href="{%tg%}">tg</a>
+        <span> - </span>
+        <a href="#">/mle/</a>
     </header>
-    <div class="fa">
-        <img src="/static/velvet.png" alt="">
+
+    <div>
+        <img src="/static/sandisi.png" alt="">
+    </div>
+
+
+    <div class="fa smw">
         <h3>{%bio%}</h3>
     </div>
-    {%body%}
+
+
+    <div class="smw en">
+        <h2 style="text-align: center; color: #f3ff07;"> ﷼﷼﷼ دونیتر های عزیز ﷼﷼﷼</h2>
+        <p style="font-family: 'Courier New', Courier, monospace;">usdt: TL8DgNqKXTBh3QfSmmNAwTBJF4gaGW3pYw <br>ton:
+            UQDGtMOv9-Q-1aN0stCUuAUUvmTJoTdRI3WZxkS11Hm8bCYK</p>
+
+        <ul>
+            <li><a href="https://t.me/SteelFalcon">steel falcon</a> - 18.6 usdt</li>
+            <li>maziar - 13 usdt</li>
+        </ul>
+    </div>
+
+    <div class="smw">
+        <h2>وبلاگ</h2>
+
+        
+        <ul>
+            {%body%}
+        </ul>
+
+    </div>
+
+    </div>
 </body>
 
 </html>
+
+
 """
 
 
@@ -69,8 +126,8 @@ for s in lofmds:
 
     if md.Meta['draft'][0] == 'false':
         # <span>::</span> <small>{date}</small>
-        posts += f"<div class='box'><a href='{s.split('/')[-1].split('.')[0]}.html'><h3>{md.Meta['title'][0]}</h3></a>  <small>{md.Meta['tldr'][0]}</small></div>"
-
+        # posts += f"<div class='box'><a href='{s.split('/')[-1].split('.')[0]}.html'><h3>{md.Meta['title'][0]}</h3></a>  <small>{md.Meta['tldr'][0]}</small></div>"
+        posts += f"<li> <a href='{s.split('/')[-1].split('.')[0]}.html'>{md.Meta['title'][0]}</a></li>"
 base_index_html = base_index_html.replace("{%body%}", posts)
 
 with open('../public_html/index.html', 'w') as file:
