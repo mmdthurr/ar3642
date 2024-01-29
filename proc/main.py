@@ -46,6 +46,8 @@ base_index_html = """
         <a href="{%tg%}">tg</a>
         <span> - </span>
         <a href="#">/mle/</a>
+        <span> - </span>
+        <a href="http://git.ar3642.top">git</a>
     </header>
 
     <div>
