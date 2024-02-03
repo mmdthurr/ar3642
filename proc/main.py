@@ -5,6 +5,22 @@ import markdown
 import pathlib
 import datetime
 
+
+
+# <div class="smw en">
+#         <h2 style="text-align: center; color: #f3ff07;"> ﷼﷼﷼ دونیتر های عزیز ﷼﷼﷼</h2>
+#         <p style="font-family: 'Courier New', Courier, monospace;">usdt: TL8DgNqKXTBh3QfSmmNAwTBJF4gaGW3pYw <br>ton:
+#             UQDGtMOv9-Q-1aN0stCUuAUUvmTJoTdRI3WZxkS11Hm8bCYK</p>
+
+#         <ul>
+#             <li><a href="https://t.me/SteelFalcon">steel falcon</a> - 18.6 usdt</li>
+#             <li>maziar - 13 usdt</li>
+#         </ul>
+#     </div>
+
+
+
+
 # base_index_html = """
 # <!DOCTYPE html>
 # <head>
@@ -60,16 +76,7 @@ base_index_html = """
     </div>
 
 
-    <div class="smw en">
-        <h2 style="text-align: center; color: #f3ff07;"> ﷼﷼﷼ دونیتر های عزیز ﷼﷼﷼</h2>
-        <p style="font-family: 'Courier New', Courier, monospace;">usdt: TL8DgNqKXTBh3QfSmmNAwTBJF4gaGW3pYw <br>ton:
-            UQDGtMOv9-Q-1aN0stCUuAUUvmTJoTdRI3WZxkS11Hm8bCYK</p>
-
-        <ul>
-            <li><a href="https://t.me/SteelFalcon">steel falcon</a> - 18.6 usdt</li>
-            <li>maziar - 13 usdt</li>
-        </ul>
-    </div>
+    
 
     <div class="smw">
         <h2>وبلاگ</h2>
