@@ -1,45 +1,11 @@
-@font-face {
-    font-family: "MyWebFont";
-    src: url("/static/Far_MashinTahrir.ttf");
-    size-adjust: 140%;
-}
-
 body {
-    font-family: MyWebFont;
-    background-image: url("/static/bck-crackle.gif");
+    background-color: #212121;
     color: white;
-}
-
-.en {
-    direction: ltr;
-}
-
-.smw {
-    max-width: 600px;
-    margin: auto;
-}
-
-div {
+    font-family: monospace;
+    font-size: 16px;
     direction: rtl;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 40px;
-    font-size: large;
-
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
-
 }
 
-.box {
-    padding: 10px;
-    border-style: hidden double hidden hidden;
-    border-color: darkorchid;
-}
-
-a {
-    color: white;
-}
 
 code {
     background-color: rgb(73, 73, 73);
@@ -48,11 +14,27 @@ code {
     padding: 5px;
 }
 
+
+.en {
+    direction: ltr;
+}
+
+.fa {
+    direction: rtl;
+}
+
+div {
+    max-width: 800px;
+    margin: auto;
+}
+
 img {
+    max-width: 100%;
     display: block;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0 auto
+}
+
+a {
+    text-decoration: none;
+    color: green;
 }

@@ -47,6 +47,7 @@ import datetime
 # """
 base_index_html = """
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -56,44 +57,31 @@ base_index_html = """
 </head>
 
 <body>
-    <header class="smw">
-        <a href="emailto: {%email%}">email</a>
-        <span> - </span>
-        <a href="{%tg%}">tg</a>
-        <span> - </span>
-        <a href="#">/mle/</a>
-        <span> - </span>
-        <a href="http://git.ar3642.top">git</a>
-    </header>
 
-    <div>
-        <img src="/static/sandisi.png" alt="">
-    </div>
+    <div class="c">
+        <header class="en">
+            <a href="emailto: {%email%}">gmail</a>
+            <span> - </span>
+            <a href="{%tg%}">tg</a>
+            <span> - </span>
+            <a href="#">/mle/</a>
+            <span> - </span>
+            <a href="http://git.ar3642.top">git</a>
 
+            <h3 class="fa">
+                {%bio%}
+            </h3>
 
-    <div class="fa smw">
-        <h3>{%bio%}</h3>
-    </div>
-
-
-    
-
-    <div class="smw">
-        <h2>وبلاگ</h2>
-
-        
-        <ul>
+        </header>
+         <ul class="fa">
             {%body%}
         </ul>
 
     </div>
 
-    </div>
 </body>
 
 </html>
-
-
 """
 
 
@@ -136,7 +124,7 @@ for s in lofmds:
     if md.Meta['draft'][0] == 'false':
         # <span>::</span> <small>{date}</small>
         # posts += f"<div class='box'><a href='{s.split('/')[-1].split('.')[0]}.html'><h3>{md.Meta['title'][0]}</h3></a>  <small>{md.Meta['tldr'][0]}</small></div>"
-        posts += f"<li> <a href='{s.split('/')[-1].split('.')[0]}.html'>{md.Meta['title'][0]}</a></li>"
+        posts += f"<li><span>{md.Meta['date'][0].split(" ")[0]}</span> <a href='{s.split('/')[-1].split('.')[0]}.html'>{md.Meta['title'][0]}</a></li>"
 base_index_html = base_index_html.replace("{%body%}", posts)
 
 with open('../public_html/index.html', 'w') as file:

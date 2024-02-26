@@ -1,12 +1,10 @@
 {
+      "blog": [
+            "index.html",
+            "v2raysetup.html",
+            "xmppwithcoturn.html"
+      ],
       "static": [
-            "26shahrivar1402.jpg",
-            "Far_MashinTahrir.ttf",
-            "bck-crackle.gif",
-            "iran.jpg",
-            "sandisi.png",
-            "stars3.gif",
-            "style.css",
-            "velvet.png"
+            "style.css"
       ]
 }
