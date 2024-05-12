@@ -1,1 +1,0 @@
-sudo dnf install pandoc && python -m venv env && source env/bin/activate && pip install markdown

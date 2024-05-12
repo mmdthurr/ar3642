@@ -1,0 +1,103 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>/stat/</title>
+    <link rel="stylesheet" href="stat_files/style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        div {
+            direction: rtl;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 40px;
+            font-size: large;
+        }
+
+        .box {
+            padding: 10px;
+            border-style: hidden double hidden hidden;
+            border-color: darkorchid;
+        }
+
+        a {
+            color: white;
+        }
+
+        code {
+            background-color: rgb(73, 73, 73);
+            display: block;
+            direction: ltr;
+        }
+
+        div {
+            direction: ltr;
+        }
+
+        p {
+            word-wrap: break-word;
+        }
+
+        span {
+            color: red;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">v2ray</h1>
+    <div id="content">
+                <p><span>iran relay</span>
+                    
+vmess://
+eyJhZGQiOiAiV0tHVHguaXIuY2hvc2tvc2guY2ZkIiwgInBzIjogImlyYW46dXNhIiwgInNjeSI6ICJhdXRvIiwgInR5cGUiOiAiIiwgInNuaSI6ICIiLCAicGF0aCI6ICIvd3MvIiwicG9ydCI6IDgwLCAidiI6IDIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSIsICJpZCI6ICJlNGNmNWZlYS1iZWY1LTYwZTEtZWUyZS02ZjNjYzBlNzAwOWQiLCAibmV0IjogIndzIn0=
+
+                    </p>
+            
+                <p><span>cloudflare</span>
+                    
+vmess://
+eyJhZGQiOiAiTkVsQmMuY2hvc2tvc2guY2ZkIiwgInBzIjogImNsb3VkZmxhcmU6dXNhIiwgInNjeSI6ICJhdXRvIiwgInR5cGUiOiAiIiwgInNuaSI6ICIiLCAicGF0aCI6ICIvd3MvIiwicG9ydCI6IDQ0MywgInYiOiAyLCAiaG9zdCI6ICIiLCAidGxzIjogInRscyIsICJpZCI6ICJlNGNmNWZlYS1iZWY1LTYwZTEtZWUyZS02ZjNjYzBlNzAwOWQiLCAibmV0IjogIndzIn0=
+
+                    </p>    
+            </div>
+    <script>
+        const urlParam = new URLSearchParams(window.location.search).get('uuid');
+        console.log(urlParam)
+        if (urlParam != null) {
+            iran = `{"add": "${makeid(5)}.ir.choskosh.cfd", "ps": "iran:usa", "scy": "auto", "type": "", "sni": "", "path": "/ws/","port": 80, "v": 2, "host": "", "tls": "none", "id": "${urlParam}", "net": "ws"}`
+            cloudflare = `{"add": "${makeid(5)}.choskosh.cfd", "ps": "cloudflare:usa", "scy": "auto", "type": "", "sni": "", "path": "/ws/","port": 443, "v": 2, "host": "", "tls": "tls", "id": "${urlParam}", "net": "ws"}`
+            function makeid(length) {
+                let result = '';
+                const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                const charactersLength = characters.length;
+                let counter = 0;
+                while (counter < length) {
+                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                    counter += 1;
+                }
+                return result;
+            }
+            document.getElementById("content").innerHTML = `
+                <p><span>iran relay</span>
+                    vmess://${btoa(iran)}
+                    </p>
+            
+                <p><span>cloudflare</span>
+                    vmess://${btoa(cloudflare)}
+                    </p>    
+            `
+
+
+
+        }
+
+
+    </script>
+
+
+
+</body></html>

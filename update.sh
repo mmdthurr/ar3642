@@ -1,1 +1,0 @@
-cd proc && source env/bin/activate && python main.py && python update.py
