@@ -6,7 +6,6 @@
     <meta http-equiv="Expires" content="0" />
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <title>/stat/</title>
-    <link rel="stylesheet" href="stat_files/style.css">
     <style>
         body {
             background-color: black;
@@ -46,8 +45,9 @@
         }
 
         span {
-            color: red;
+            color: rgb(0, 255, 21);
             display: block;
+            font-size: larger;
         }
     </style>
 </head>
@@ -55,7 +55,6 @@
 <body>
     <h1 style="text-align: center;">v2ray</h1>
     <div id="content">
-
     </div>
     <script>
         const urlParam = new URLSearchParams(window.location.search).get('uuid');
@@ -76,15 +75,15 @@
                 return result;
             }
             document.getElementById("content").innerHTML = `
-                <p><span>iran relay port 443</span>
+                <p><span>- iran relay port 443 (set allowInsecure to true)</span>
                     vmess://${btoa(iranp443)}
                     </p>
 
-                <p><span>iran relay port 80</span>
+                <p><span>- iran relay port 80</span>
                     vmess://${btoa(iranp80)}
                     </p>
 
-                <p><span>cloudflare</span>
+                <p><span>- cloudflare</span>
                     vmess://${btoa(cloudflare)}
                     </p>    
             `
