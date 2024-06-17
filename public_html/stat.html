@@ -1,5 +1,7 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <title>/stat/</title>
     <link rel="stylesheet" href="stat_files/style.css">
     <style>
@@ -50,25 +52,26 @@
 <body>
     <h1 style="text-align: center;">v2ray</h1>
     <div id="content">
-                <p><span>iran relay</span>
-                    
-vmess://
-eyJhZGQiOiAiV0tHVHguaXIuY2hvc2tvc2guY2ZkIiwgInBzIjogImlyYW46dXNhIiwgInNjeSI6ICJhdXRvIiwgInR5cGUiOiAiIiwgInNuaSI6ICIiLCAicGF0aCI6ICIvd3MvIiwicG9ydCI6IDgwLCAidiI6IDIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSIsICJpZCI6ICJlNGNmNWZlYS1iZWY1LTYwZTEtZWUyZS02ZjNjYzBlNzAwOWQiLCAibmV0IjogIndzIn0=
+        <p><span>iran relay</span>
 
-                    </p>
-            
-                <p><span>cloudflare</span>
-                    
-vmess://
-eyJhZGQiOiAiTkVsQmMuY2hvc2tvc2guY2ZkIiwgInBzIjogImNsb3VkZmxhcmU6dXNhIiwgInNjeSI6ICJhdXRvIiwgInR5cGUiOiAiIiwgInNuaSI6ICIiLCAicGF0aCI6ICIvd3MvIiwicG9ydCI6IDQ0MywgInYiOiAyLCAiaG9zdCI6ICIiLCAidGxzIjogInRscyIsICJpZCI6ICJlNGNmNWZlYS1iZWY1LTYwZTEtZWUyZS02ZjNjYzBlNzAwOWQiLCAibmV0IjogIndzIn0=
+            vmess://
+            eyJhZGQiOiAiV0tHVHguaXIuY2hvc2tvc2guY2ZkIiwgInBzIjogImlyYW46dXNhIiwgInNjeSI6ICJhdXRvIiwgInR5cGUiOiAiIiwgInNuaSI6ICIiLCAicGF0aCI6ICIvd3MvIiwicG9ydCI6IDgwLCAidiI6IDIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSIsICJpZCI6ICJlNGNmNWZlYS1iZWY1LTYwZTEtZWUyZS02ZjNjYzBlNzAwOWQiLCAibmV0IjogIndzIn0=
 
-                    </p>    
-            </div>
+        </p>
+
+        <p><span>cloudflare</span>
+
+            vmess://
+            eyJhZGQiOiAiTkVsQmMuY2hvc2tvc2guY2ZkIiwgInBzIjogImNsb3VkZmxhcmU6dXNhIiwgInNjeSI6ICJhdXRvIiwgInR5cGUiOiAiIiwgInNuaSI6ICIiLCAicGF0aCI6ICIvd3MvIiwicG9ydCI6IDQ0MywgInYiOiAyLCAiaG9zdCI6ICIiLCAidGxzIjogInRscyIsICJpZCI6ICJlNGNmNWZlYS1iZWY1LTYwZTEtZWUyZS02ZjNjYzBlNzAwOWQiLCAibmV0IjogIndzIn0=
+
+        </p>
+    </div>
     <script>
         const urlParam = new URLSearchParams(window.location.search).get('uuid');
         console.log(urlParam)
         if (urlParam != null) {
-            iran = `{"add": "${makeid(5)}.ir.choskosh.cfd", "ps": "iran:usa", "scy": "auto", "type": "", "sni": "", "path": "/ws/","port": 80, "v": 2, "host": "", "tls": "none", "id": "${urlParam}", "net": "ws"}`
+            iranp443 = `{"add":"${makeid(5)}.ir.choskosh.cfd","aid":"0","alpn":"","fp":"","host":"","id":"${urlParam}","net":"ws","path":"/ws/","port":"443","ps":"iranP443:usa","scy":"auto","sni":"","tls":"tls","type":"","v":"2"}`
+            iranp80 = `{"add": "${makeid(5)}.ir.choskosh.cfd", "ps": "iranP80:usa", "scy": "auto", "type": "", "sni": "", "path": "/ws/","port": 80, "v": 2, "host": "", "tls": "none", "id": "${urlParam}", "net": "ws"}`
             cloudflare = `{"add": "${makeid(5)}.choskosh.cfd", "ps": "cloudflare:usa", "scy": "auto", "type": "", "sni": "", "path": "/ws/","port": 443, "v": 2, "host": "", "tls": "tls", "id": "${urlParam}", "net": "ws"}`
             function makeid(length) {
                 let result = '';
@@ -82,8 +85,12 @@ eyJhZGQiOiAiTkVsQmMuY2hvc2tvc2guY2ZkIiwgInBzIjogImNsb3VkZmxhcmU6dXNhIiwgInNjeSI6
                 return result;
             }
             document.getElementById("content").innerHTML = `
-                <p><span>iran relay</span>
-                    vmess://${btoa(iran)}
+                <p><span>iran relay port 443</span>
+                    vmess://${btoa(iranp443)}
+                    </p
+
+                <p><span>iran relay port 80</span>
+                    vmess://${btoa(iranp80)}
                     </p>
             
                 <p><span>cloudflare</span>
@@ -100,4 +107,6 @@ eyJhZGQiOiAiTkVsQmMuY2hvc2tvc2guY2ZkIiwgInBzIjogImNsb3VkZmxhcmU6dXNhIiwgInNjeSI6
 
 
 
-</body></html>
+</body>
+
+</html>
